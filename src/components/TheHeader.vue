@@ -1,19 +1,33 @@
 <template>
-  <div class="w-full py-8">
-    <nav class="container max-w-6xl px-8 mx-auto flex flex-row">
+  <div class="w-full py-4 md:py-8">
+    <nav class="container max-w-6xl px-2 mx-auto flex flex-row md:px-8">
       <div>
-        <a href="#" class="flex flex-row py-2 px-4">
-          <img src="../assets/img/palette-logo.png" alt="" class="w-10" />
-          <h2 id="name" class="ml-2 my-auto text-2xl font-bold">Palette</h2>
+        <a href="#" class="flex flex-row py-1 px-1 md:py-2 md:px-4">
+          <img
+            src="../assets/img/palette-logo.png"
+            alt=""
+            class="my-auto w-6 h-6 md:w-10 md:h-10"
+          />
+          <h2 id="name" class="ml-2 my-auto text-xl font-bold md:text-2xl">
+            Palette
+          </h2>
         </a>
       </div>
       <div class="ml-auto">
-        <ul class="flex flex-row gap-8 h-full">
+        <ul class="flex flex-row gap-4 h-full md:gap-8">
           <li class="my-auto">
-            <a href="#" class="py-2 px-4 font-semibold">Info</a>
+            <a
+              href="#"
+              class="py-1 px-2 font-semibold transition-opacity hover:opacity-70 md:py-2 md:px-4"
+              >Info</a
+            >
           </li>
           <li class="my-auto">
-            <a href="#" class="py-2 px-4 font-semibold">About</a>
+            <a
+              href="#"
+              class="py-1 px-2 font-semibold transition-opacity hover:opacity-70 md:py-2 md:px-4"
+              >About</a
+            >
           </li>
         </ul>
       </div>

@@ -4,7 +4,7 @@ export const useUIStore = defineStore("UIStore", {
   state: () => {
     return {
       title: "Hello World!",
-      background: "rgb(255 255 255)", // White
+      background: "rgb(231 229 228)", // Stone 200
       text: "rgb(15 23 42)", // Slate 900
       primary: "rgb(220 38 38)", // Red 600
       secondary: "rgb(251 191 36)", // Amber 400
@@ -17,5 +17,13 @@ export const useUIStore = defineStore("UIStore", {
     textColor: (state) => state.text,
     primaryColor: (state) => state.primary,
   },
-  actions: {},
+  actions: {
+    updateColors() {
+      const container = document.querySelector("#app");
+      console.log(container);
+
+      container.style.backgroundColor = this.background;
+      container.style.color = this.text;
+    },
+  },
 });
