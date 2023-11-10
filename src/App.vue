@@ -1,11 +1,12 @@
 <template>
   <the-header></the-header>
-  <h1>{{ UIStore.title }}</h1>
+  <the-hero></the-hero>
 </template>
 
 <script setup>
 import { useUIStore } from "./stores/useUIStore";
 import TheHeader from "./components/TheHeader.vue";
+import TheHero from "./components/TheHero.vue";
 import { onMounted } from "vue";
 
 const UIStore = useUIStore();
